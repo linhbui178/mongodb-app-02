@@ -1,6 +1,7 @@
 # mongodb-app-02
 ## Answers
 1. What is the purpose of using `.env`
+
 `.env` is used to store environment variables to keep sensitive and configuration data separate from code.
 
 2. How does this work:
@@ -11,15 +12,19 @@ if (query.minPrice || query.maxPrice) {
     if (query.maxPrice) filter.price.$lte = Number(query.maxPrice);
 }
 ```
+
 This code creates a MongoDB price filter dynamically using $gte (min price) and $lte (max price) based on what the user provides in the query.
 
 3. What is the program `seed.js` used for?
+
 The program seed.js is used to populate the database with initial data.
 
 4. Try all API routes using Postman
+
 N/A
 
 5. In terms of code what is the difference between `put` and `patch`
+
 `put` replaces entire resource while `patch` only updates specific fields.
 
 ## API Routes
@@ -37,4 +42,4 @@ N/A
 | DELETE | `/api/books/:id` | Delete a book |
 
 ## Screenshots
-![GET | `/api/health`](<Screenshot 2026-05-14 230344.png>) ![GET | `/api/books`](<Screenshot 2026-05-14 225028.png>) ![GET | `/api/books?author=George+Orwell`](<Screenshot 2026-05-14 232403.png>) ![GET | `/api/books?minPrice=10&maxPrice=20`](<Screenshot 2026-05-14 225316.png>) ![GET | `/api/books/:id`](<Screenshot 2026-05-14 225401.png>) ![POST | `/api/books`](<Screenshot 2026-05-14 232215.png>) ![PUT | `/api/books/:id`](<Screenshot 2026-05-14 225708.png>) ![PATCH | `/api/books/:id`](<Screenshot 2026-05-14 225939.png>) ![DELETE | `/api/books/:id`](<Screenshot 2026-05-14 230254.png>)
+![alt text](1.png) ![alt text](2.png) ![alt text](3.png) ![alt text](4.png) ![alt text](5.png) ![alt text](6.png) ![alt text](7.png) ![alt text](8.png) ![alt text](9.png) 
