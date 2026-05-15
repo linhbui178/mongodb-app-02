@@ -1,0 +1,16 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "Node + Express + MongoDB books API for CSC 3221 MongoDB activities",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "mongodb": "^6.21.0"
+  }
+}
